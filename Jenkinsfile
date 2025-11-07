@@ -1,4 +1,8 @@
 pipeline{
+ 
+ agent any
+
+ 
  environment{
     DOCKER_IMAGE = "subhu667/my-img"
     DOCKER_TAG  = "1.0"
@@ -11,7 +15,7 @@ pipeline{
             }
         }
 
-        stage("checkout from git"){
+        stage("running container"){
             steps{
                 echo "======== running the container ========"
                 sh "docker run -d -p 8081:8080 --name my-conppp ${DOCKER_IMG}:DOCKER_TAG"
