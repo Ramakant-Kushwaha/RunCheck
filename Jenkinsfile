@@ -1,6 +1,6 @@
 pipeline{
  environment{
-    DOCKER_IMAGE: "subhu667/my-web",
+    DOCKER_IMAGE: "subhu667/my-img",
     DOCKER_TAG : "1.0"
  }
     stages{
