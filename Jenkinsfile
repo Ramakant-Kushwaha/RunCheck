@@ -18,7 +18,7 @@ pipeline{
         stage("running container"){
             steps{
                 echo "======== running the container ========"
-                sh "docker run -d -p 8081:8080 --name my-conppp ${DOCKER_IMG}:${DOCKER_TAG}"
+                sh "docker run -d -p 8081:8080 --name my-conppp ${DOCKER_IMAGE}:${DOCKER_TAG}"
             }
         }
 }
