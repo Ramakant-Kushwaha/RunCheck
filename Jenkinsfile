@@ -1,7 +1,7 @@
 pipeline{
  environment{
-    DOCKER_IMAGE: "subhu667/my-img",
-    DOCKER_TAG : "1.0"
+    DOCKER_IMAGE = "subhu667/my-img",
+    DOCKER_TAG  = "1.0"
  }
     stages{
         stage("checkout from git"){
