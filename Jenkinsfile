@@ -14,7 +14,7 @@ pipeline{
         stage("checkout from git"){
             steps{
                 echo "======== running the container ========"
-                docker run -d -p 8081:8080 --name my-conppp ${DOCKER_IMG}:DOCKER_TAG
+                sh "docker run -d -p 8081:8080 --name my-conppp ${DOCKER_IMG}:DOCKER_TAG"
             }
         }
 }
